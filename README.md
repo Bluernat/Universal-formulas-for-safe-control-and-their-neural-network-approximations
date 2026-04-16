@@ -1,6 +1,6 @@
 # Neural Network-based Universal Formulas for Control
 
-Companion code for the NeurIPS 2025 submission: *"Neural Network-based Universal Formulas for Control"*
+Companion code for the paper: *"Neural Network-based Universal Formulas for Control"*, submitted to *Systems & Control Letters*.
 
 This repository contains the full pipeline to reproduce the high-dimensional simulation experiments: dataset generation, backbone training, task-specific fine-tuning, and runtime comparison of five controllers on a 10-dimensional single-integrator system with 1 CLF + 9 CBF constraints.
 
@@ -231,11 +231,11 @@ Open `runtime.ipynb` and run all cells with all outputs from Steps 2 and 3 prese
 If you use this code, please cite:
 
 ```bibtex
-@inproceedings{,
-  title     = {Neural Network-based Universal Formulas for Control},
-  author    = {},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2025},
+@article{,
+  title   = {Neural Network-based Universal Formulas for Control},
+  author  = {},
+  journal = {Systems \& Control Letters},
+  year    = {2025},
 }
 ```
 
