@@ -1,6 +1,6 @@
 # Universal formulas for safe control and their neural network approximations
 
-Companion code for the paper: *"Neural Network-based Universal Formulas for Control"*, submitted to *Systems & Control Letters*.
+Companion code for the paper: *"Universal formulas for safe control and their neural network approximations"*, submitted to *Systems & Control Letters*.
 
 This repository contains the full pipeline to reproduce the high-dimensional simulation experiments: dataset generation, backbone training, task-specific fine-tuning, and runtime comparison of five controllers on a 10-dimensional single-integrator system with 1 CLF + 9 CBF constraints.
 
