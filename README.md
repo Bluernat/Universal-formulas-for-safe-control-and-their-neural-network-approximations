@@ -1,4 +1,4 @@
-# Neural Network-based Universal Formulas for Control
+# Universal formulas for safe control and their neural network approximations
 
 Companion code for the paper: *"Neural Network-based Universal Formulas for Control"*, submitted to *Systems & Control Letters*.
 
@@ -231,11 +231,53 @@ Open `runtime.ipynb` and run all cells with all outputs from Steps 2 and 3 prese
 If you use this code, please cite:
 
 ```bibtex
-@article{,
-  title   = {Neural Network-based Universal Formulas for Control},
-  author  = {},
-  journal = {Systems \& Control Letters},
-  year    = {2025},
+@Article{PM-JC-EDS:25-scl,
+  author =       {P. Mestres and J. Cort\'es and E. D. Sontag},
+  title =        {Universal formulas for safe control and their neural
+                  network approximations},
+  journal =      {Systems and Control Letters},
+  year =         2025,
+  note =         {Submitted. \url{https://arxiv.org/abs/2505.24744}},
+  abstract =     {We study the problem of designing a controller that
+                  satisfies an arbitrary number of affine inequalities
+                  at every point in the state space. This is motivated
+                  by the fact that a variety of key control
+                  objectives, such as stability, safety, and input
+                  saturation, are guaranteed by closed-loop systems
+                  whose controllers satisfy such inequalities. Many
+                  works in the literature design such controllers as
+                  the solution to a state-dependent quadratic program
+                  (QP) whose constraints are precisely the
+                  inequalities. When the input dimension and number of
+                  constraints are high, computing a solution of this
+                  QP in real time can become computationally
+                  burdensome. Additionally, the solution of such
+                  optimization problems is not smooth in general,
+                  which can degrade the performance of the
+                  system. This paper provides a novel method to design
+                  a smooth controller that satisfies an arbitrary
+                  number of affine constraints. The controller is
+                  given at every state as the minimizer of a strictly
+                  convex function. To avoid computing the minimizer of
+                  such function in real time, we introduce a method
+                  based on neural networks (NN) to approximate the
+                  controller. Remarkably, this NN can be used to solve
+                  the controller design problem for any task with less
+                  than a fixed input dimension and number of affine
+                  constraints, and is completely independent of the
+                  state dimension. This is why we refer to such NN
+                  approximation as a NN-based universal formula for
+                  control. Additionally, we show that the NN-based
+                  controller only needs to be trained with datapoints
+                  from a bounded set in the state space, which
+                  significantly simplifies the training
+                  process. Various simulations showcase the
+                  performance of the proposed solution, and also show
+                  that the NN-based controller can be used to
+                  warmstart an optimization scheme that refines the
+                  approximation of the true controller in real time,
+                  significantly reducing the computational cost
+                  compared to a generic initialization.},
 }
 ```
 
